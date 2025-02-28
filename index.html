@@ -1,30 +1,67 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie Pisici</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie Pisici</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Galerie de Pisici</h1>
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="https://catfriendly.com/wp-content/uploads/2021/08/cat-lying-down.jpg" alt="Pisica 1">
-            <div class="name">Milo</div>
-        </div>
-        <div class="gallery-item">
-            <img src="https://www.orangepet.in/cdn/shop/articles/selective-closeup-cute-kitten-floor_1.jpg?v=1693461218" alt="Pisica 2">
-            <div class="name">Luna</div>
-        </div>
-        <div class="gallery-item">
-            <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?cs=srgb&dl=pexels-pixabay-104827.jpg&fm=jpg" alt="Pisica 3">
-            <div class="name">Whiskers</div>
-        </div>
-        <div class="gallery-item">
-            <img src="https://iandloveandyou.com/cdn/shop/articles/Black_Cat.jpg?v=1709236586&width=2800" alt="Pisica 4">
-            <div class="name">Simba</div>
-        </div>
+
+  <header class="site-header">
+    <div class="header-content">
+      <h1 class="site-title">Galerie de Pisici</h1>
+      <nav class="site-nav">
+        <a href="#about" class="nav-link">Despre</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
     </div>
+  </header>
+
+
+  <main class="cat-banner">
+    <button class="prev-btn"><</button>
+    <div class="cat-slider">
+      <div class="cat-item active" data-name="Luna" data-description="Luna este o pisică curajoasă și aventuroasă care își petrece timpul explorând fiecare colț al casei. Mâncarea ei preferată este pâinea cu ou." data-food="Pâine cu ou">
+        <div class="cat-name-overlay">Luna</div>
+        <img src="https://www.orangepet.in/cdn/shop/articles/selective-closeup-cute-kitten-floor_1.jpg?v=1693461218" alt="Luna">
+        <div class="hover-overlay">
+          <span>Află mai multe</span>
+        </div>
+      </div>
+      <div class="cat-item" data-name="Milo" data-description="Milo este un pisica relaxată și iubitoare care se bucură să dormească pe canapea întreagă zi. El adorează peștele." data-food="Pește">
+        <div class="cat-name-overlay">Milo</div>
+        <img src="https://catfriendly.com/wp-content/uploads/2021/08/cat-lying-down.jpg" alt="Milo">
+        <div class="hover-overlay">
+          <span>Află mai multe</span>
+        </div>
+      </div>
+      <div class="cat-item" data-name="Whiskers" data-description="Whiskers este cunoscut pentru inteligența sa și abilitatea sa de a deschide uși. Este un pisica curioasă și jucăreacă. Mâncarea lui preferată este carnea suculentă." data-food="Carne suculentă">
+        <div class="cat-name-overlay">Whiskers</div>
+        <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?cs=srgb&dl=pexels-pixabay-104827.jpg&fm=jpg" alt="Whiskers">
+        <div class="hover-overlay">
+          <span>Află mai multe</span>
+        </div>
+      </div>
+      <div class="cat-item" data-name="Simba" data-description="Simba este o pisică regală cu o pelerină neagră strălucitoare. Este calmă și preferă să se odihnească în lumina soarelui. Ea are o pasiune specială pentru mămăligă." data-food="Mămăligă">
+        <div class="cat-name-overlay">Simba</div>
+        <img src="https://iandloveandyou.com/cdn/shop/articles/Black_Cat.jpg?v=1709236586&width=2800" alt="Simba">
+        <div class="hover-overlay">
+          <span>Află mai multe</span>
+        </div>
+      </div>
+    </div>
+    <button class="next-btn">></button>
+  </main>
+
+
+  <section id="cat-details" class="cat-details hidden">
+    <h2 id="cat-name"></h2>
+    <p id="cat-description"></p>
+    <p><strong>Mâncarea Preferată:</strong> <span id="cat-food"></span></p>
+    <button id="close-details">Închide</button>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
