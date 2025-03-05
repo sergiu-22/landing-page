@@ -11,3 +11,5 @@ Plan pe viitor:
 Doresc sa extind acest proiect, sa ajunga la varianta cea mai aproapiata de perfectiune.
 
 Acest proiect este open-source și poate fi utilizat liber.
+
+[Live Demo] (https://sergiu-22.github.io/landing-page/)
